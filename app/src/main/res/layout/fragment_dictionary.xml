@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll"
+    tools:context=".DictionaryFragment"
+    android:background="#f2f5df"
+    tools:ignore="ExtraText">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:textAlignment="viewEnd"
+        android:id="@+id/edit_word"
+        android:background="@color/white"
+        android:paddingTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="20dp"
+        android:inputType="text"/>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="0dp"
+            android:id="@+id/SpinHistoryDict"
+            android:visibility="invisible"
+            android:spinnerMode="dialog"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear"
+            android:background="@color/keyBoard"
+            android:layout_weight="1">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/historyDict"
+            android:text="History"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/play"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/ic_not_ready"
+            android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="Search"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/animatio"
+            app:lottie_rawRes="@raw/animatio"
+            android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/define"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f2f5df"
+                android:padding="15dp"
+                android:scrollbars="vertical"
+                android:textSize="18sp"
+                android:textColor="@color/tool"
+                android:visibility="invisible"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/aud"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</ScrollView>

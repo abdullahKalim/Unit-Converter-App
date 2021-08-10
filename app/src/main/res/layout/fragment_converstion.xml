@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConverstionFragment" >
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@+id/spinTo"
+          android:layout_alignParentTop="true"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/textfrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@+id/spinFrom"
+        android:layout_alignParentTop="true"
+            tools:ignore="UnknownId"
+        android:textSize="20dp" />
+
+        <Spinner
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="2"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@+id/textfrom"
+        android:background="@drawable/custom_spinner"
+        android:id="@+id/spinFrom"/>
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/text2"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_spinner"
+        android:id="@+id/spinTo"/>
+
+</RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:id="@+id/from"
+        android:background="@drawable/custom_edit"
+        android:drawableStart="@drawable/ic_keyboard"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/textTo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_edit"
+        android:ems="13"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="240dp"
+        android:background="@drawable/custom_edit"
+        android:text="Convert"
+        android:id="@+id/convert"/>
+
+</LinearLayout>

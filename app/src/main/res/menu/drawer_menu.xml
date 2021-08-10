@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText"
+    tools:showIn="navigation_view">
+    <group android:id="@+id/Firstgrp" android:checkableBehavior="single">
+        <item android:id="@+id/calculator"
+            android:icon="@drawable/ic_baseline_calculate_24"
+            android:title="Calculator" />
+        <item android:id="@+id/num_sys"
+            android:icon="@drawable/ic_binary"
+            android:title="Number System" />
+        <item android:id="@+id/postPre"
+            android:icon="@drawable/ic_equal"
+            android:title="PostFix PreFix" />
+    </group>
+    <group android:id="@+id/secondGroup" android:checkableBehavior="single">
+        <item android:id="@+id/temp"
+            android:icon="@drawable/ic_temperature"
+            android:title="Temperature"/>
+        <item android:id="@+id/weigth"
+            android:icon="@drawable/ic_weight"
+            android:title="Weigth"/>
+        <item android:id="@+id/length"
+            android:icon="@drawable/ic_length"
+            android:title="Length"/>
+        <item android:id="@+id/angle"
+            android:icon="@drawable/ic_angle"
+            android:title="Angle"/>
+        <item android:id="@+id/pressure"
+            android:icon="@drawable/ic_angle"
+            android:title="Pressure"/>
+        <item android:id="@+id/volume"
+            android:icon="@drawable/ic_angle"
+            android:title="Volume"/>
+        <item android:id="@+id/energy"
+            android:icon="@drawable/ic_angle"
+            android:title="Energy"/>
+        <item android:id="@+id/power"
+            android:icon="@drawable/ic_angle"
+            android:title="Power"/>
+
+    </group>
+    <group android:id="@+id/thirdgroup" android:checkableBehavior="single">
+        <item android:id="@+id/currency"
+            android:icon="@drawable/ic_currency"
+            android:title="Currency"/>
+        <item android:id="@+id/crypto"
+        android:icon="@drawable/ic_baseline_monetization_on_24"
+        android:title="Crypto Currency"/>
+    </group>
+    <group android:id="@+id/fourthgroup" android:checkableBehavior="single">
+        <item android:id="@+id/dictionary"
+            android:icon="@drawable/ic_dictionary"
+            android:title="Dictionary"/>
+    </group>
+    <group android:id="@+id/fifthgroup" android:checkableBehavior="single">
+        <item android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"/>
+        <item android:id="@+id/report"
+        android:icon="@drawable/ic_report"
+        android:title="Report a Problem"/>
+        <item android:id="@+id/about"
+        android:icon="@drawable/ic_baseline_comment_24"
+        android:title="About"/>
+    </group>
+</menu>
